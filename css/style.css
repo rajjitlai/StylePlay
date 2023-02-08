@@ -33,7 +33,7 @@
 
 .xya {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
@@ -42,7 +42,7 @@
 
 .xyb {
   border: 2px solid #fff;
-  width: 100%;
+  width: 90%;
   min-height: 100vh;
   margin: 20px;
   padding: 5px;
@@ -112,7 +112,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin: 20px;
+  margin: 30px;
   font-size: 20px !important;
 }
 
@@ -120,7 +120,8 @@ ul {
   list-style: none;
 }
 
-footer{
+footer {
+  margin-top: 50px;
   background: #fff;
   font-size: 20px !important;
 }
@@ -144,13 +145,51 @@ footer{
 }
 
 .credit a:hover {
-  color:rgb(17, 240, 17)
+  color: rgb(17, 240, 17);
 }
 
-footer p{
+footer p {
   color: #000;
   font-weight: bold;
   text-align: center;
   padding: 5px;
   background: #9090903e;
+}
+
+/* responsiveness */
+@media screen and (min-width: 1024px) {
+  .xya {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 740px) {
+  .abcd p {
+    font-size: 20px;
+  }
+
+  style {
+    white-space: pre-line;
+  }
+
+  .xyz,
+  .xyz2,
+  .xyz3,
+  .xyz4 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .credit{
+    flex-direction: column;
+    font-size: 18px !important;
+  }
+}
+
+.fa-heart{
+  color: #00fdea;
+}
+
+.fa-whatsapp{
+  font-size: 25px !important;
 }
