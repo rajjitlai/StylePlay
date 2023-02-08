@@ -13,9 +13,15 @@
   align-items: center;
 }
 
+.abcd{
+  background: rgba(0, 94, 255, 0.867);
+  padding: 15px;
+  box-shadow: 6px 6px 5px 0px #fff;
+}
+
 .abcd p {
-  font-size: 25px;
-  color: #fff;
+  font-size: 35px;
+  color: rgb(255, 213, 0);
   font-weight: 700;
 }
 
@@ -54,6 +60,8 @@ body {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/bg.jpg);
   background-position: center;
   background-size: cover;
+  transition: all 2s ease;
+  color: #fff;
 }
 
 .xyb,
@@ -65,21 +73,35 @@ body {
 
 .xxyz {
   flex-direction: column !important;
+  color: #000;
 }
 
-.xyz {
-  border-radius: 50%;
-  width: 50%;
+.xyz,
+.xyz2,
+.xyz3, 
+.xyz4 {
+  width: 200px;
   height: 200px;
-  background: #fff;
   margin: 10px;
   padding: 5px;
+  text-align: center;
+  font-size: 30px;
 }
 
-.xyz2 {
-  width: 50%;
-  height: 200px;
-  background: #fff;
-  margin: 10px;
-  padding: 5px;
+.xyz{
+  background-image: url(/img/bg.jpg) !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.xyz2{
+  background: rgb(17, 240, 17);
+}
+
+.xyz3{
+  background: red;
+}
+
+.xyz4{
+  background: blue;
 }
