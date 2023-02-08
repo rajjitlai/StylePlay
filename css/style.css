@@ -15,7 +15,7 @@
 
 .abcd p {
   font-size: 25px;
-  color: #000;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -31,10 +31,11 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
+  width: 100%;
 }
 
 .xyb {
-  border: 2px solid #00fdea;
+  border: 2px solid #fff;
   width: 100%;
   min-height: 100vh;
   margin: 20px;
@@ -45,10 +46,14 @@
 style {
   white-space: pre-wrap;
   display: block;
+  background: rgba(4, 9, 30, 0.7);
+  width: 100%;
 }
 
 body {
-  background: linear-gradient(#00fdea, #fff);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .xyb,
