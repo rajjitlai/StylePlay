@@ -2,188 +2,146 @@
 <html lang="en">
 
 <head>
-          <title>FUN with JS and CSS : Play in your own Style</title>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link href="css/style.css" rel="stylesheet">
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-          <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-5W6PT5PJ23"></script>
-          <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-5W6PT5PJ23');
-          </script>
-          <script async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6667552621334034"
-                    crossorigin="anonymous"></script>
-
+    <title>StylePlay : Play in your own Style</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 </head>
 
 <body>
-          <header class="pqr">
-                    <div class="abc">
-                              <a href="/">
-                                        <img src="/img/logo.png" alt="logo">
-                              </a>
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="/">
+                <img src="/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="tagline-container">
+            <p>PLAY IN YOUR OWN STYLE</p>
+        </div>
+    </header>
+
+    <div class="playground-container">
+        <div class="editor-section">
+            <div class="editor-header">
+                <div class="window-controls"></div>
+                <div class="toolbar">
+                    <select id="snippet-select" class="snippet-select">
+                        <option value="" disabled selected>Load Snippet...</option>
+                        <option value="neon">Neon Glow</option>
+                        <option value="glass">Glassmorphism</option>
+                        <option value="grid">Grid Layout</option>
+                        <option value="bounce">Bounce Animation</option>
+                    </select>
+                    <button id="copy-btn" class="tool-btn" title="Copy to Clipboard">
+                        <i class="fa fa-copy"></i>
+                    </button>
+                    <button id="reset-btn" class="tool-btn" title="Reset Code">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                </div>
+            </div>
+            <style contenteditable class="live-css-editor" id="live-css">
+                body {
+                    font-family: 'Inter', sans-serif;
+                    background: #0f172a;
+                    color: white;
+                }
+
+                .preview-box {
+                    border-radius: 12px;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+                }
+
+                .box-1 {
+                    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+                }
+
+                .box-2 {
+                    background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%);
+                }
+
+                .box-3 {
+                    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+                }
+
+                .box-4 {
+                    background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+                }
+            </style>
+        </div>
+
+        <div class="preview-section">
+            <div class="preview-header">
+                <button class="device-btn active" data-device="desktop" title="Desktop View">
+                    <i class="fa fa-desktop"></i>
+                </button>
+                <button class="device-btn" data-device="tablet" title="Tablet View">
+                    <i class="fa fa-tablet"></i>
+                </button>
+                <button class="device-btn" data-device="mobile" title="Mobile View">
+                    <i class="fa fa-mobile"></i>
+                </button>
+            </div>
+            <div class="preview-content" id="preview-container">
+                <div class="preview-column">
+                    <div>
+                        <div class="preview-box box-1" contenteditable></div>
                     </div>
-                    <div class="abcd">
-                              <p>PLAY IN YOUR OWN STYLE</p>
+                    <div>
+                        <div class="preview-box box-2" contenteditable></div>
                     </div>
-          </header>
-
-          <div class="xya">
-                    <div class="xyb">
-                              <style contenteditable>
-                                        body {
-                                                  font-size: ;
-                                                  background: ;
-                                                  background-position: ;
-                                        }
-
-                                        .xyz {
-                                                  background: ;
-                                                  background-image: url();
-                                                  background-position: ;
-                                                  background-size: ;
-                                                  width: ;
-                                                  height: ;
-                                                  border-radius: ;
-                                        }
-
-                                        .xyz2 {
-                                                  background: ;
-                                                  background-image: url();
-                                                  background-position: ;
-                                                  background-size: ;
-                                                  width: ;
-                                                  height: ;
-                                                  border-radius: ;
-                                        }
-
-                                        .xyz3 {
-                                                  background: ;
-                                                  background-image: url();
-                                                  background-position: ;
-                                                  background-size: ;
-                                                  width: ;
-                                                  height: ;
-                                                  border-radius: ;
-                                        }
-
-                                        .xyz4 {
-                                                  background: ;
-                                                  background-image: url();
-                                                  background-position: ;
-                                                  background-size: ;
-                                                  width: ;
-                                                  height: ;
-                                                  border-radius: ;
-                                        }
-                              </style>
+                </div>
+                <div class="preview-column">
+                    <div>
+                        <div class="preview-box box-3" contenteditable></div>
                     </div>
-
-                    <div class="xyb">
-                              <div class="xxyz">
-                                        <div>
-                                                  <div class="xyz" contenteditable></div>
-                                        </div>
-                                        <div>
-                                                  <div class="xyz2" contenteditable></div>
-                                        </div>
-                              </div>
-                              <div class="xxyz">
-                                        <div>
-                                                  <div class="xyz3" contenteditable></div>
-                                        </div>
-                                        <div>
-                                                  <div class="xyz4" contenteditable></div>
-                                        </div>
-                              </div>
+                    <div>
+                        <div class="preview-box box-4" contenteditable></div>
                     </div>
-          </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-          <div class="info-box">
-                    <div class="information">
-                              <h2>You can use the following CSS Properties</h2>
-                              <ul>
-                                        <li>
-                                                  background: <i>color</i>;
-                                                  <p>You can use any color you want</p>
-                                        </li>
-                                        <li>background-image: url(<i>https://imageurl/anypicture</i>);
-                                                  <p>You can use any image source url </p>
-                                        </li>
-                                        <li>
-                                                  background-position: <i>center</i>;
-                                                  <p>center - to center the image, left - put at the left side, right
-                                                            and so on</p>
-                                        </li>
-                                        <li>
-                                                  background-size: <i>cover</i>;
-                                                  <p>cover - to cover the section, contain - to contain the section, fit
-                                                            - to fit the section, etc.</p>
-                                        </li>
-                                        <li>
-                                                  width: <i>any value</i>px;
-                                                  <br>
-                                                  height: <i>any value</i>px;
-                                        </li>
+    <div class="info-box">
+        <div class="information">
+            <h2>CSS Properties You Can Use</h2>
+            <ul>
+                <li>
+                    <span>background:</span> <i>color</i>;
+                </li>
+                <li><span>background-image:</span> url(<i>image-url</i>);
+                </li>
+                <li>
+                    <span>background-position:</span> <i>center</i>;
+                </li>
+                <li>
+                    <span>background-size:</span> <i>cover</i>;
+                </li>
+                <li>
+                    <span>width:</span> <i>px/auto</i>;
+                </li>
+                <li>
+                    <span>height:</span> <i>px/auto</i>;
+                </li>
+                <li>
+                    <span>border-radius:</span> <i>px/%</i>;
+                </li>
+            </ul>
+        </div>
+    </div>
 
-                                        <li>
-                                                  border-radius: <i>1 to 100% </i> or <i>1 to 100px</i>;
-                                                  <p>will give the shape of the element</p>
-                                        </li>
+    <footer>
+        <p>Copyright &copy; 2023 StylePlay</p>
+    </footer>
 
-                                        <li>
-                                                  <p>If you cannot change the property, try adding !impotant at the end
-                                                            of the property <br>
-                                                            like background: red !impotant;
-                                                  </p>
-                                        </li>
-                              </ul>
-                    </div>
-          </div>
-
-          <footer>
-                    <div class="credit">
-                              <div class="count">
-                                        <h1 id="count">0</h1>
-                                        <p>page views</p>
-                              </div>
-                              <div class="credit-owner">
-                                        <h4>
-                                                  Made with <i class="fa fa-heart"></i> by: <a
-                                                            href="https://mypersonalportfolio-rl.netlify.app/"
-                                                            target="portfolio">Rajjit Laishram</a>
-                                        </h4>
-                              </div>
-                              <div class="other-credit">
-                                        <h4>
-                                                  Photos: <a href="https://www.vecteezy.com/free-vector/programming"
-                                                            target="_parent">Vecteezy</a>
-                                        </h4>
-                              </div>
-                              <div class="share">
-                                        <h4>
-                                                  Share on Whatsapp <a
-                                                            href="https://api.whatsapp.com/send?text=https://fun-with-js-and-css.netlify.app/"
-                                                            data-action="share/whatsapp/share" target="whatsapp"><i
-                                                                      class="fa fa-whatsapp"></i></a>
-                                        </h4>
-                              </div>
-                    </div>
-                    <p>Copyright &COPY; 2023 FUN with JS and CSS</p>
-          </footer>
-
-          <script src="js/script.js"></script>
-          <script async
-                    src="https://api.countapi.xyz/hit/fun-with-js-and-css.netlify.app/visits?callback=updateVisitCount"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
